@@ -17,6 +17,15 @@ export const Navbar = () => {
         {({ isActive }) => <span> {isActive ? "📱Contatos" : "Contatos"}</span>}
       </NavLink>{" "}
       <br />
+      <NavLink
+        to="/dashbord"
+        className={({ isActive }) => (isActive ? "link-ativo" : "")}
+      >
+        {({ isActive }) => (
+          <span> {isActive ? "📱Dashboard" : "Dashboard"}</span>
+        )}
+      </NavLink>{" "}
+      <br />
     </>
   );
 };
